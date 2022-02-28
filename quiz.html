@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <script src="validation.js"></script>
+
+    <h1>Please fill out the form</h1>
+
+    <div>
+        <form name="myForm" onsubmit="return validate()" method="post">
+            <div class="div1">
+                <div class="div1">
+                    <label>First name:</label><input type="text" name="fname"><br>
+                    <label>Last name:</label><input type="text" name="lname"><br>
+                    <label>Email:</label><input type="text" name="email"><br>
+                </div>
+
+                <div class="div1">
+                    <h2>Question 1: What is my favorite programming language?</h2>
+                    <input type="radio" id="radioPython" name="favoriteLanguage" value="Python">
+                    <label id="r1" for="radioPython">Python</label><br>
+                    <input type="radio" id="radioJava" name="favoriteLanguage" value="Java">
+                    <label id="r2" for="radioJava">Java</label><br>
+                    <input type="radio" id="radioC++" name="favoriteLanguage" value="C++">
+                    <label id="r3" for="radioC++">C++</label><br>
+                    <input type="radio" id="radioHTML" name="favoriteLanguage" value="HTML">
+                    <label id="r4" for="radioHTML">HTML</label><br>
+                </div>
+
+                <div class="div1">
+                    <h2>Question 2: Which programming languages do I know?</h2>
+                    <input type="checkbox" id="checkJava" name="check1" value="Java">
+                    <label id="c1" for="checkJava">Java</label><br>
+                    <input type="checkbox" id="checkC#" name="check2" value="C#">
+                    <label id="c2" for="checkC#">C#</label><br>
+                    <input type="checkbox" id="checkC++" name="check3" value="C++">
+                    <label id="c3" for="checkC++">C++</label><br>
+                    <input type="checkbox" id="checkPython" name="check4" value="Python">
+                    <label id="c4" for="checkPython">Python</label><br>
+                </div>
+
+                <div id="div2">
+                    <h2>Question 3: What programming language do I want to learn?</h2>
+                    <label id="answer">Answer:</label><textarea id="text" maxlength="50" rows="4" cols="76"
+                        name="text"></textarea><br>
+                </div>
+                <div class="div3">
+                    <input id="button" type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+label {
+    width: 70px;
+    float: left;
+}
+
+textarea {
+    resize: none;
+}
+
+a {
+    float: right;
+    margin-right: 68px;
+}
+
+.div1 {
+    width: fit-content;
+}
+
+#div2 {
+    text-align: center;
+}
+
+.div3 {
+    float: right;
+}
+
+div {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    text-align: center;
+}
